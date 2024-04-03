@@ -1,0 +1,16 @@
+---
+title: "Auschwitz Analysis"
+author: 
+  - Owais Zahid
+thanks: "Code and data are available at: https://github.com/FFFiend/shiny_exploration"
+date: today
+date-format: long
+abstract: "TBD"
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+# Introduction
+hi @citeR
+
+# References
