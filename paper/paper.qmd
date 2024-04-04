@@ -5,7 +5,7 @@ author:
 thanks: "Code and data are available at: https://github.com/FFFiend/shiny_exploration"
 date: today
 date-format: long
-abstract: "Individuals of Catholic and Jewish faith (30,036 and 28,511 respectively) comprised the majority of the victims"
+abstract: "Individuals of Catholic and Jewish faith (30,036 and 28,511 respectively) comprised the majority of the holocaust victims between the years 1941-1943. The lowest figures seen in terms of religion were Muslim and Agnostic, each with one victim in all three years. There were several different birthplace and residence groups amongst the 65,280 victims within this time frame, with no specific preference for either a birthplace or residence."
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -63,3 +63,5 @@ In summary, the development of the Shiny app for analyzing Holocaust victims at 
 
 
 # References
+Bouie, Jamelle, "We Still Can't See American Slavery for What It Was",
+https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html 
