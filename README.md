@@ -5,7 +5,8 @@ Please find the app deployed [here](https://387gk4-owais-zahid.shinyapps.io/shin
 
 
 # file structure
-```data``` contains the raw csv file with data on the victim's such as name, religion, residence, DOB, etc.
+```app``` contains code for the deployed shiny app as well as the raw dataset csv file, as both need to be in the same directory for successful deployment.
+
 ```paper``` contains code for the produced paper as well as citations (to both R packages and the dataset's source itself).
 
 ```llm``` contains the ChatGPT 3.5 usage history.

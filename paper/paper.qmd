@@ -5,12 +5,61 @@ author:
 thanks: "Code and data are available at: https://github.com/FFFiend/shiny_exploration"
 date: today
 date-format: long
-abstract: "TBD"
+abstract: "Individuals of Catholic and Jewish faith (30,036 and 28,511 respectively) comprised the majority of the victims"
 format: pdf
 number-sections: true
 bibliography: references.bib
 ---
 # Introduction
-hi @citeR
+This paper investigates the distribution of holocaust victims based on three factors: religion, place of birth, and residence and discusses the work conducted in the process using the themes from the New York Times Article titled "We Stil Can't See American Slavery For What It Was" by Jamelle Bouie. The shiny app can be found [here](https://387gk4-owais-zahid.shinyapps.io/shiny_exploration-1/) and the libraries used for this exploration were shiny @cites, dplyr @cdip, ggplot2 @citeg and the R programming language @citeR.
+
+# Data
+The data for the Auschwitz death certificates between the years 1941-1943 was obtained by the Holocaust Survivors and Victims Database. The number of victims within this time period was 65,280. Columns in the dataset are named as follows (and in the same order): last name, first name(s), date of birth, date of death, birthplace, residence, and religion.
+
+Here is a quick preview on the dataset itself:
+
+```{r}
+#| warning: false
+#| echo: false
+#| label: Table 1
+#| tbl-cap: Header for Auschwitz Victims Between 1941-1943 Dataset
+auschwitz_data <- read.csv("~/shiny_exploration/data.csv")
+head(auschwitz_data)
+```
+## Analysis of Different Religious Groups
+Upon successful deployment of the shiny web app, one can observe the number of people murdered per each religious group below: 
+
+
+![Auschwitz deaths per each religion](~/shiny_exploration/media/religion.png)
+The highest number of deaths per religion is Catholic, followed by Jew numbered at 30,036 and 28,511 respectively. The lowest death counts belong to the Muslim, Unaffiliated and Agnostic groups with all three sitting at 1 death respectively. The Hussite and Buddhist groups each have 2 deaths, and the Jehovah's Witness group has 3. Furthermore, there were 6 deaths belonging to the andere group, 10 belonging to the Russian Orthodox group, 89 to the Believes in God group, 93 to the Eastern Orthodox group and 256 and 260 belonging to the Unknown and Czech-Moravian groups respectively. Finally, there were 815 Greek Catholic deaths, and 2145 Protestant deaths.
+
+## Analysis of Different Birth-places
+Since there are a vast number of birthplaces within the dataset, and that the size of the dataset is 65,280 we shall only highlight a few of each. Here is a preview of a few deaths per birthplace:
+![Auschwitz deaths per a few birthplaces](~/shiny_exploration/media/birthplace.png)
+We can see that amongst the few groups displayed, Amsterdam had the highest death count as a place of birth with 2438 deaths, with Paris and Rotterdam ranking 2nd and 3rd with 694 and 578 deaths respectively. 
+Finally, here is a preview of a few deaths per residence:
+![Auschwitz deaths per a few residences](~/shiny_exploration/media/residence.png)
+
+
+# Discussion
+"We Still Can’t See American Slavery for What It Was" by Jamelle Bouie sheds light on the enduring legacy of slavery in the United States and the challenges of reckoning with its full impact. Drawing from Bouie's themes, let's discuss the development of the Shiny app for analyzing Holocaust victims at Auschwitz:
+
+Acknowledging Historical Trauma:
+Bouie's work emphasizes the importance of acknowledging the full extent of historical trauma inflicted by slavery. Similarly, the Shiny app confronts the devastating reality of the Holocaust by providing a platform to examine the data on victims. Through interactive graphs and tables, users can delve into the demographics of those who perished at Auschwitz, recognizing the individual lives lost and the collective trauma endured by millions.
+
+Understanding Systems of Oppression:
+Bouie's analysis often delves into the systemic nature of oppression, highlighting how slavery was not just an isolated event but a foundational institution that shaped American society. Similarly, the Shiny app invites users to explore the systematic targeting and extermination of specific groups during the Holocaust. By examining data on nationality, birthplace, and residence, users can grasp the mechanisms of oppression that led to the genocide of millions of people.
+
+Intersectionality and Marginalized Identities:
+Bouie's work underscores the intersectionality of race, class, and gender in understanding historical injustices. Likewise, the Shiny app allows users to explore the diverse backgrounds of Holocaust victims, including their nationality, ethnicity, and religious affiliation. By recognizing the intersectionality of identities among the victims, the app fosters a more nuanced understanding of the Holocaust and its impact on marginalized communities.
+
+Challenges of Memory and Representation:
+Bouie discusses the challenges of accurately remembering and representing the history of slavery, particularly in a society that often seeks to downplay or distort its legacy. Similarly, the Shiny app grapples with the complexities of representing the Holocaust in a respectful and accurate manner. Through data visualization and analysis, the app strives to present the facts of history while honoring the memory of the victims and survivors.
+
+Educational and Commemorative Tools:
+Both Bouie's writing and the Shiny app serve as educational and commemorative tools, seeking to broaden public understanding of historical atrocities and their ongoing repercussions. By providing accessible ways to engage with data and analysis, the app encourages users to confront uncomfortable truths about the Holocaust and its implications for contemporary society.
+
+In summary, the development of the Shiny app for analyzing Holocaust victims at Auschwitz reflects themes brought up in Bouie's work on American slavery. By acknowledging historical trauma, understanding systemic oppression, recognizing intersectional identities, and grappling with challenges of memory and representation, the app contributes to ongoing efforts to confront the legacies of genocide and promote a more just and inclusive society.
+
 
 # References
