@@ -1,4 +1,5 @@
 # shiny_exploration
+This repository contains an exploration on the demographics of holocaust victims between the years 1941-1943. 
 
 # Web App Deployment
 Please find the app deployed [here](https://387gk4-owais-zahid.shinyapps.io/shiny_exploration)
